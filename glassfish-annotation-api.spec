@@ -8,7 +8,7 @@
 
 Name:          %{?scl_prefix}%{pkg_name}
 Version:       1.2
-Release:       9.1%{?dist}
+Release:       9.2%{?dist}
 Summary:       Common Annotations API Specification (JSR 250)
 License:       CDDL or GPLv2 with exceptions
 # http://jcp.org/en/jsr/detail?id=250
@@ -20,7 +20,7 @@ Source0:       %{pkg_name}-%{namedversion}-src-svn.tar.gz
 BuildRequires: %{?scl_prefix}jvnet-parent
 BuildRequires: %{?scl_prefix}glassfish-legal
 
-BuildRequires: %{?scl_prefix_java_common}maven-local
+BuildRequires: %{?scl_prefix}maven-local
 BuildRequires: %{?scl_prefix}maven-plugin-bundle
 BuildRequires: %{?scl_prefix}maven-remote-resources-plugin
 BuildRequires: %{?scl_prefix}maven-source-plugin
@@ -68,6 +68,9 @@ set -e -x
 %doc LICENSE.txt
 
 %changelog
+* Mon Feb 08 2016 Michal Srb <msrb@redhat.com> - 1.2-9.2
+- Fix BR on maven-local & co.
+
 * Mon Jan 11 2016 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.2-9.1
 - SCL-ize package
 
