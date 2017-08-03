@@ -6,7 +6,7 @@
 %global oname javax.annotation-api
 Name:          %{?scl_prefix}glassfish-annotation-api
 Version:       1.2
-Release:       11.1%{?dist}
+Release:       11.2%{?dist}
 Summary:       Common Annotations API Specification (JSR 250)
 License:       CDDL or GPLv2 with exceptions
 # http://jcp.org/en/jsr/detail?id=250
@@ -58,6 +58,9 @@ cp -p target/classes/META-INF/LICENSE.txt .
 %license LICENSE.txt
 
 %changelog
+* Thu Jun 22 2017 Michael Simacek <msimacek@redhat.com> - 1.2-11.2
+- Mass rebuild 2017-06-22
+
 * Wed Jun 21 2017 Java Maintainers <java-maint@redhat.com> - 1.2-11.1
 - Automated package import and SCL-ization
 
